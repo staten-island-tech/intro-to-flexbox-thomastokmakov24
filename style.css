@@ -25,6 +25,8 @@ img {
 }
 .card-header {
   display: flex ;
+  box-sizing: border-box;
+  Width: 100%
   /* flexdirection; */
 }
 #centeredH {
