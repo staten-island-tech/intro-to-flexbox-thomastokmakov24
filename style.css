@@ -3,6 +3,7 @@ h2 {
   margin: 0%;
   padding: 6%;
   font-size: 15px;
+  display: flex ;
 }
 .card {
     width:22% ;
@@ -18,10 +19,10 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
 }
-img {
+.card-img {
   width: 100%;
   padding: 2px auto;
-  max-height: 50vh;
+  max-height: 160px;
 }
 .card-header {
   display: flex ;
@@ -29,6 +30,7 @@ img {
   Width: 100%
   /* flexdirection; */
 }
+.card-price
 #centeredH {
   text-align: center;
   color: burlywood;
