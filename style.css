@@ -20,7 +20,7 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
 }
-.card-img {
+.cardImg {
   width: 100%;
   padding: 2px auto;
   max-height: 20vh;
@@ -45,12 +45,12 @@ button:hover {
   box-shadow: 0 4px 8px rgba(50, 58, 209, 0.2);
   margin: 0px;
 }
-.card-price {
+.cardPrice {
   color: grey;
   font-weight: bold;
   font-size: 20px;
 }
-.card-header {
+.cardHeader {
   display: flex ;
   /* flexdirection; */
 }

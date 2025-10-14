@@ -3,16 +3,23 @@ const Love = [
         cardHeader: "Trail2header",
         cardImg: "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
         cardPrice: 1,
-        alt:"not good",
    //     selected: false,
     },
 ];
-Love.forEach((Love) => inject(Love));
 function inject(cry) {
     const container =document.querySelector(".container");
-    container.insertAdjacentHTML("afterbegin",``
+    container.insertAdjacentHTML(
+        "afterbegin",
+        `<div class="card"><img src=${cry.cardImg} alt="mimimimimi"/><button>SGN</button><h2>${cry.cardHeader}</h2></div>`
         
     )
+}
+
+Love.forEach((Love) => inject(Love));
+const Selectors= {
+    cardHeader: document.querySelector("cardHeader"),
+    cardImg : document.querySelector("cardImg"),
+    cardPrice: document.querySelector("cardPrice")
 }
 
 // function inject(injek) {
