@@ -124,17 +124,23 @@ function inject(cry) {
     const container =document.querySelector(".container");
     container.insertAdjacentHTML(
         "afterbegin",
-        `<div class="card"><img src=${cry.cardImg} alt="mimimimimi"/><button>SGN</button><h2>${cry.cardHeader}</h2> <h2 class = "cardPrice">${cry.cardPrice}</h2></div>`
+        `<div class="card"><img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/><button>SGN</button><h2>${cry.cardHeader}</h2> <h2 class = "cardPrice">${cry.cardPrice}</h2></div>`
         
     )
 }
-
+//The idea is to let _ = 0. Add evnt listner click. If click add the card price of the closest card into _. Add  DIFFERENT BUTTON at the bottom that says check out. Same but if press, instead of adding to _, it would print _. 
 Love.forEach((Love) => inject(Love));
 const Selectors= {
     cardHeader: document.querySelector("cardHeader"),
     cardImg : document.querySelector("cardImg"),
     cardPrice: document.querySelector("cardPrice")
 }
+function addToKart () {
+const button = document.querySelector("button");
+    let stored = 0
+    console.log(stored + cardPrice);
+}
+button.addEventListener("click",addToKart)
 
 // function inject(injek) {
 //     const container = document.querySelector(".container");

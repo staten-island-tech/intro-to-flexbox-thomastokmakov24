@@ -23,13 +23,13 @@ h2 {
 .cardImg {
   width: 100%;
   padding: 2px auto;
-  max-height: 20vh;
+  max-height: 40vh;
 }
 .libertinus-keyboard-regular {
   font-family: "Libertinus Keyboard", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+}//add a name for the buttom ti select el class btn
 button {
   background-color: blue;
   color: white;
