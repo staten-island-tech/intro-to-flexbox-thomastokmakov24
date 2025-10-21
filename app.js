@@ -124,7 +124,12 @@ function inject(cry) {
     const container =document.querySelector(".container");
     container.insertAdjacentHTML(
         "afterbegin",
-        `<div class="card"><img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/><button>SGN</button><h2>${cry.cardHeader}</h2> <h2 class = "cardPrice">${cry.cardPrice}</h2></div>`
+        `<div class="card">
+        <img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/>
+        <button class = "btn">SGN</button>
+        <h2>${cry.cardHeader}</h2> 
+        <h2 class = "cardPrice">${cry.cardPrice}</h2>
+        </div>`
         
     )
 }
@@ -135,12 +140,19 @@ const Selectors= {
     cardImg : document.querySelector("cardImg"),
     cardPrice: document.querySelector("cardPrice")
 }
-function addToKart () {
-const button = document.querySelector("button");
+function addToKart() {
+const button = document.querySelectorAll("btn");
     let stored = 0
-    console.log(stored + cardPrice);
+    button.addEventListener("click", function (event) {
+        console.log(/* stored + cardPrice */
+            event.target.closest(".card").getAttribute("cardPrice"),
+            event.textContext
+
+        );
+    })
 }
-button.addEventListener("click",addToKart)
+//button.addEventListener("click",addToKart)
+addToKart(Love);
 
 // function inject(injek) {
 //     const container = document.querySelector(".container");

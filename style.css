@@ -29,8 +29,8 @@ h2 {
   font-family: "Libertinus Keyboard", system-ui;
   font-weight: 400;
   font-style: normal;
-}//add a name for the buttom ti select el class btn
-button {
+}/* //add a name for the buttom ti select el class btn */
+.btn {
   background-color: blue;
   color: white;
   padding: 10px;
