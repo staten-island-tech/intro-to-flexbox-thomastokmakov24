@@ -4,6 +4,7 @@ const Love = [
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
+    genre: "Andy"
     //     selected: false,
   },
   {
@@ -12,13 +13,14 @@ const Love = [
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     //     selected: false,
+    genre: "Andy"
   },
   {
     cardHeader: "Trail2header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
-    //     selected: false,
+    genre: "Andy"
   },
   {
     cardHeader: "Trail2header",
@@ -160,17 +162,20 @@ const Selectors = {
 };
 function addToKart() {
   const button = document.querySelectorAll(".btn");
+  button.forEach((button) => {
   //  let stored = 0
-  button.addEventListener("click", function (event) {
+  button.addEventListener("click", function insertAdjacentHTML(jjoo) {
     console.log(
+      "clicked",
       /* stored + cardPrice */
-      event.target.closest(".card").querySelector(".cardPrice").textContent,
+      jjoo.target.closest(".card").querySelector(".cardPrice")/* .textContent */,
      // event.target.textContent
-      //Number('cont wahatever' in prev)
+      //Number(button)
     );
 
   });
-}
+
+})};
 //button.addEventListener("click",addToKart)
 addToKart();
 
