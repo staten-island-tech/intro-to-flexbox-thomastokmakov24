@@ -146,7 +146,7 @@ function inject(cry) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "afterbegin",
-    `<div class="card">
+    `<div class="card" data-genre="${cry.genre}">
         <img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/>
         <button class = "btn">SGN</button>
         <h2>${cry.cardHeader}</h2> 
@@ -182,15 +182,15 @@ addToKart();
 function filterByGenre(genre) {
   const cards = document.querySelectorAll(".card");
   cards.forEach((card)=>{
-    const cardCatagory = card.getAttribute("genre");
-    if (genre === cardCatagory) {
+    const cardCategory = (card.dataset.genre || "").toLowerCase();
+if (cardCategory === (genre || "").toLowerCase()) {
       card.style.display = "";
     } else {
       card.style.display = "none";
     }
   });
 }
-filterByGenre("Andy");
+//filterByGenre("PiNK");
 // function inject(injek) {
 //     const container = document.querySelector(".container");
 //     container.insertAdjacentHTML("afterbegin",``)
