@@ -191,6 +191,16 @@ if (cardCategory === (genre || "").toLowerCase()) {
   });
 }
 //filterByGenre("PiNK");
+function setupFilterButtons() {
+  const filterButtons = document.querySelectorAll(".fbtn");
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const category = button.dataset.genre;
+      filterByGenre(category);
+    });
+  });
+}
+setupFilterButtons();
 // function inject(injek) {
 //     const container = document.querySelector(".container");
 //     container.insertAdjacentHTML("afterbegin",``)
