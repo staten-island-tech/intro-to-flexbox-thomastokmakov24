@@ -161,6 +161,10 @@ const Selectors = {
   cardImg: document.querySelector("cardImg"),
   cardPrice: document.querySelector("cardPrice"),
 };
+let omAnNerf = [];
+function addToCart2(example) {
+  list.unshift(example);}
+//trying another addtocartfunction with a lil taste of rozgoborGnm
 function addToKart() {
   const button = document.querySelectorAll(".btn");
   button.forEach((button) => {
@@ -182,8 +186,8 @@ addToKart();
 function filterByGenre(genre) {
   const cards = document.querySelectorAll(".card");
   cards.forEach((card)=>{
-    const cardCategory = (card.dataset.genre || "").toLowerCase();
-if (cardCategory === (genre || "").toLowerCase()) {
+    const cardCategory = (card.dataset.genre).toLowerCase();  /* || "" */
+if (cardCategory === (genre).toLowerCase()) {/*  || "" */
       card.style.display = "";
     } else {
       card.style.display = "none";
