@@ -146,34 +146,45 @@ function inject(cry) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "afterbegin",
-    `<div class="card" data-genre="${cry.genre}">
+    `<div class="card" data-genre="${cry.genre}"  data-cardPrice="${cry.cardPrice}"data-cardPrice="${cry.cardPrice}">
         <img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/>
         <button class = "btn">SGN</button>
-        <h2>${cry.cardHeader}</h2> 
-        <h2 class = "cardPrice">${cry.cardPrice}</h2>
+        <h2 >${cry.cardHeader}</h2> 
+        <h2 class = "cardPrice" >${cry.cardPrice}</h2>
         </div>`
   );
 }
 //The idea is to let _ = 0. Add evnt listner click. If click add the card price of the closest card into _. Add  DIFFERENT BUTTON at the bottom that says check out. Same but if press, instead of adding to _, it would print _.
 Love.forEach((Love) => inject(Love));
 const Selectors = {
-  cardHeader: document.querySelector("cardHeader"),
-  cardImg: document.querySelector("cardImg"),
-  cardPrice: document.querySelector("cardPrice"),
+  cardHeader: document.querySelector(".cardHeader"),
+  cardImg: document.querySelector(".cardImg"),
+  cardPrice: document.querySelector(".cardPrice"),
 };
 let omAnNerf = [];
 function addToCart2(example) {
-  list.unshift(example);}
+  //let omAnNerf = [];
+  omAnNerf.unshift(example);}
 //trying another addtocartfunction with a lil taste of rozgoborGnm
 function addToKart() {
   const button = document.querySelectorAll(".btn");
   button.forEach((button) => {
   //  let stored = 0
-  button.addEventListener("click", function insertAdjacentHTML(jjoo) {
+  button.addEventListener("click", function(jjoo) {
+    let card = jjoo.target.closest(".card");
+//    addToCart2(card.dataset.cardPrice);
+//    addToCart2(card.dataset.cardHeader);//my data set and privce doesnt work  my add to list stufgf works
+    addToCart2({name: card.dataset.cardHeader, price: card.dataset.cardPrice});//works now with object
     console.log(
-      "clicked",
+      "clicked",omAnNerf,
       /* stored + cardPrice */
       jjoo.target.closest(".card").querySelector(".cardPrice")/* .textContent */,
+/*       let card = jjoo.target.closest(".card");
+  addToCart2(card.dataset.price);
+  addToCart2(card.dataset.name); */
+//      addToCart2(jjoo.target.closest(".card").getAttribute("data-cardPrice")/* .textContent */),
+//      addToCart2(jjoo.target.closest(".card").getAttribute("data-cardHeader")/* .textContent */),
+
      // event.target.textContent
       //Number(button)
     );
