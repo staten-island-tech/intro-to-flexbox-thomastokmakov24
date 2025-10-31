@@ -146,7 +146,7 @@ function inject(cry) {
   const container = document.querySelector(".container");
   container.insertAdjacentHTML(
     "afterbegin",
-    `<div class="card" data-genre="${cry.genre}"  data-cardPrice="${cry.cardPrice}"data-cardPrice="${cry.cardPrice}">
+    `<div class="card" data-genre="${cry.genre}"  data-cardPrice="${cry.cardPrice}"data-cardHeader="${cry.cardHeader}">
         <img class="cardImg" src=${cry.cardImg} alt="mimimimimi"/>
         <button class = "btn">SGN</button>
         <h2 >${cry.cardHeader}</h2> 
@@ -170,11 +170,11 @@ function addToKart() {
   const button = document.querySelectorAll(".btn");
   button.forEach((button) => {
   //  let stored = 0
-  button.addEventListener("click", function(jjoo) {
-    let card = jjoo.target.closest(".card");
+  button.addEventListener("click", e => {
+    const card = e.target.closest(".card");
 //    addToCart2(card.dataset.cardPrice);
 //    addToCart2(card.dataset.cardHeader);//my data set and privce doesnt work  my add to list stufgf works
-    addToCart2({name: card.dataset.cardHeader, price: card.dataset.cardPrice});//works now with object
+    addToCart2({name: card.getAttributeNode(`${card.cardHeader}`), price: card.getAttributeNode(`${card.cardHeader}`)});//the dumbass name and price work but it cant take from the other. Name: and price good but then undefined so at least not null
     console.log(
       "clicked",omAnNerf,
       /* stored + cardPrice */
