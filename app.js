@@ -151,7 +151,7 @@ function inject(cry) {
         <button class = "btn">SGN</button>
         <h2 >${cry.cardHeader}</h2> 
         <h2 class = "cardPrice" >${cry.cardPrice}</h2>
-        </div>`
+        </div>`,
   );
 }
 //The idea is to let _ = 0. Add evnt listner click. If click add the card price of the closest card into _. Add  DIFFERENT BUTTON at the bottom that says check out. Same but if press, instead of adding to _, it would print _.
@@ -172,13 +172,17 @@ function addToKart() {
   //  let stored = 0
   button.addEventListener("click", e => {
     const card = e.target.closest(".card");
+    const name = card.getAttribute("data-cardHeader");
+    const price = Number(card.getAttribute("data-cardPrice"));
+    const item = { name, price };
+addToCart2(item);
 //    addToCart2(card.dataset.cardPrice);
 //    addToCart2(card.dataset.cardHeader);//my data set and privce doesnt work  my add to list stufgf works
-    addToCart2({name: card.getAttributeNode(`${card.cardHeader}`), price: card.getAttributeNode(`${card.cardHeader}`)});//the dumbass name and price work but it cant take from the other. Name: and price good but then undefined so at least not null
+//addToCart2({name: card.getAttribute(`${card.cardHeader}`), price: card.getAttributeNode(`${card.cardHeader}`)});//the dumbass name and price work but it cant take from the other. Name: and price good but then undefined so at least not null//no idea what the Node part does but it was in the mdn and literatically it would make sense. .getAttributeNode()
     console.log(
-      "clicked",omAnNerf,
+      "clicked",omAnNerf,item
       /* stored + cardPrice */
-      jjoo.target.closest(".card").querySelector(".cardPrice")/* .textContent */,
+     // e.target.closest(".card").querySelector(".cardPrice")/* .textContent */,
 /*       let card = jjoo.target.closest(".card");
   addToCart2(card.dataset.price);
   addToCart2(card.dataset.name); */
