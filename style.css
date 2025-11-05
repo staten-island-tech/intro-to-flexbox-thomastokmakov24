@@ -65,7 +65,7 @@ button:hover {
 .cardPrice {
   color: grey;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
 }
 .cardHeader {
   display: flex ;

@@ -8,7 +8,7 @@ const Love = [
     //     selected: false,
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.1header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
@@ -16,7 +16,7 @@ const Love = [
     genre: "Andy"
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.2header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
@@ -30,105 +30,105 @@ const Love = [
     genre:"PiNK"
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.3header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK"
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.4header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.5header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.7header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.8header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.9header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.10header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.11header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.12header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"PiNK",
   },
   {
-    cardHeader: "Poor Johnny. hes probably in the 45th school in the country",
+    cardHeader: "Poor roonny. hes probably in the 45th school in the country",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"Holy HOS Nuke",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.13header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"Holy HOS Nuke",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.14header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"Holy HOS Nuke",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.15header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"Holy HOS Nuke",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.16header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
     genre:"Holy HOS Nuke",
   },
   {
-    cardHeader: "Trail2header",
+    cardHeader: "Trail2.17header",
     cardImg:
       "https://th.bing.com/th/id/OIP.WOkEH6d0G3Q4TwlgWplZcwHaGC?w=219&h=180&c=7&r=0&o=7&cb=12&pid=1.7&rm=3",
     cardPrice: 1,
@@ -165,6 +165,10 @@ let omAnNerf = [];
 function addToCart2(example) {
   //let omAnNerf = [];
   omAnNerf.unshift(example);}
+let numbers = 0;
+function addToCart2(ex) {
+  //let omAnNerf = [];
+  numbers.unshift(ex);}
 //trying another addtocartfunction with a lil taste of rozgoborGnm
 function addToKart() {
   const button = document.querySelectorAll(".btn");
