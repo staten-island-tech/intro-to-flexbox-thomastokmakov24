@@ -1,0 +1,29 @@
+information = [
+TAKE,
+TAKE,
+SERVE,
+TAKE,
+SERVE,
+SERVE,
+CLOSE,
+TAKE,
+TAKE,
+TAKE,
+SERVE,
+CLOSE,
+TAKE,
+SERVE,
+TAKE,
+SERVE,
+TAKE,
+TAKE,
+TAKE,
+TAKE,
+TAKE,
+TAKE,
+SERVE,
+CLOSE,
+EOF]
+
+function waitForService(information) {
+    

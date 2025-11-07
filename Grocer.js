@@ -56,7 +56,17 @@ function findDNS(records, target) {
   let high = records.length - 1;
   while (low <= high) {
     let mid = Math.floor((low + high) / 2);
-    console.log(records[mid]);
+    if (records[mid].address === target) {
+      return records[mid].dns;
+    }
+    else if (records[mid].address < target) {
+      low=mid + 1; }
+    else if (records[mid].address > target) {//this line can also be jut }else{
+      high=mid - 1; }
+
+
+
+      console.log(records[mid]);
 }
 
 }
