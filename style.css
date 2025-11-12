@@ -89,3 +89,41 @@ button:hover {
   }
 }
 
+/* how to Vite
+One free bad question or else minus hos
+Converts code for user
+speeds up big projects
+packages easier to import
+Tailwind. tool for css.
+Bootstrap has bunch of premade code for css
+locomotive scroll and gsap bothe help with animation
+Vite-take things that we need and shipo that instead of huge library and package
+cntrl tilda~
+things to copy
+npm //for the stuff at home
+node--version //20
+npm create vite@latest
+y to procceed
+project name:
+app
+framework:vanilla
+javascript
+no for rolldown-vite(experimental)
+install with npm and start now?
+no
+//created folder with some apps
+tells you to type in terminal
+cd app//cd stands for change directory
+go into app folder
+npm i or npm install//both mean same thing
+if you go to commit in desktop and theres many, hos minus. Node modules should not be in commit. 
+import `./style.css`; in main.js
+mdn run dev //in the termnal gives us some stuff abt info
+cntrl c hit yes//build tool to make it less biger/fatty
+run vite project by typing npm run dev in terminal but the cd app first
+if new computer, cd app first, then npm i is the answer
+
+
+
+
+*/
