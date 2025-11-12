@@ -200,7 +200,7 @@ addToNumbers(price);
      // event.target.textContent
       //Number(button)
     );
-      const cartText ="clicked " +JSON.stringify(omAnNerf, null/* nO replacer func */, 2/* THIS ADDS INDENTATION OF TWO SPACES */) +" total: " + numbers;//adds the stuff.
+      const cartText ="Listofreapwutusow " +JSON.stringify(omAnNerf, null/* nO replacer func *//* THIS ADDS INDENTATION OF TWO SPACES */) +" total: " + numbers;//adds the stuff.
       // use pre so that format no stop
       cartDiv.innerHTML /* adds the stuff into html so adds to the card cuz the stuff not insert from json but frm html */= `<pre style="white-space:pre-wrap">${cartText}</pre>`;
 
