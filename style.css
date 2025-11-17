@@ -118,7 +118,7 @@ go into app folder
 npm i or npm install//both mean same thing
 if you go to commit in desktop and theres many, hos minus. Node modules should not be in commit. 
 import `./style.css`; in main.js
-mdn run dev //in the termnal gives us some stuff abt info
+npm run dev //in the termnal gives us some stuff abt info
 cntrl c hit yes//build tool to make it less biger/fatty
 run vite project by typing npm run dev in terminal but the cd app first
 if new computer, cd app first, then npm i is the answer
